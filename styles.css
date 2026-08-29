@@ -34,9 +34,9 @@ input { width:100%; min-width:0; border:0; outline:0; background:transparent; co
 .presets button { border:1px solid var(--line); color:#536159; background:transparent; padding:4px 7px; font:600 8px Manrope; cursor:pointer; }
 .presets button:hover, .presets button.active { border-color:var(--ink); background:var(--ink); color:var(--lime); }
 .range-table { display:grid; gap:10px; }
-.range-row { display:grid; grid-template-columns:1.1fr 1fr 1fr; gap:10px; align-items:end; }
+.range-row { display:grid; grid-template-columns:minmax(175px,1.4fr) repeat(2,minmax(110px,1fr)); gap:10px; align-items:end; }
 .range-row label { min-width:0; }
-.range-row .input-wrap input { width:0; min-width:64px; flex:1 1 64px; }
+.range-row .input-wrap input { width:100%; min-width:72px; flex:1 1 auto; }
 .range-row .input-wrap span { font-size:9px; }
 .metric-row { padding-top:10px; border-top:1px solid var(--line); }
 .range-output { min-width:0; }
