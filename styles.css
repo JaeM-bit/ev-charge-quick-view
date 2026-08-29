@@ -10,7 +10,7 @@ body { margin:0; background:var(--paper); color:var(--ink); font-family:Manrope,
 .intro { padding:25px 0 23px; display:grid; grid-template-columns:1fr .55fr; align-items:end; }
 .eyebrow { grid-column:1/-1; margin:0 0 12px; display:flex; align-items:center; gap:10px; color:#526058; }
 .eyebrow span { width:26px; height:2px; background:var(--lime); }
-h1 { font-size:clamp(38px,4.3vw,57px); line-height:.94; letter-spacing:-3px; margin:0; font-weight:600; }
+h1 { font-size:clamp(32px,3.6vw,48px); line-height:.96; letter-spacing:-2.5px; margin:0; font-weight:600; }
 h1 em { color:#7b8b81; font-style:normal; }
 .lede { margin:0 0 3px 25px; max-width:390px; font-size:14px; line-height:1.5; color:#59655f; }
 .calculator { display:grid; grid-template-columns:1.35fr .75fr; background:var(--white); border:1px solid var(--line); box-shadow:0 16px 45px #1d2f2510; }
@@ -60,4 +60,4 @@ dt { color:#aab7af; } dd { margin:0; font-family:"DM Mono"; }
 footer { height:52px; display:flex; justify-content:space-between; align-items:center; color:#7b857f; }
 footer p { font-size:13px; }
 @media (max-width:850px) { .intro { grid-template-columns:1fr; gap:30px; } .lede { margin:0; } .calculator { grid-template-columns:1fr; } h1 { letter-spacing:-4px; } }
-@media (max-width:600px) { .shell { width:min(100% - 24px,1180px); } .nav { height:74px; } .nav-note { display:none; } .intro { padding:38px 4px; } h1 { font-size:40px; letter-spacing:-2.5px; } .lede { font-size:15px; } form,.results { padding:35px 24px; } .battery-fields,.charger-fields,.range-fields { grid-template-columns:1fr; } .range-heading { padding-right:0; padding-bottom:48px; } .unit-toggle { left:48px; right:auto; top:auto; bottom:0; } .divider { margin:34px 0; } footer { height:90px; } }
+@media (max-width:600px) { .shell { width:min(100% - 24px,1180px); } .nav { height:74px; } .nav-note { display:none; } .intro { padding:38px 4px; } h1 { font-size:34px; letter-spacing:-2px; } .lede { font-size:15px; } form,.results { padding:35px 24px; } .battery-fields,.charger-fields,.range-fields { grid-template-columns:1fr; } .range-heading { padding-right:0; padding-bottom:48px; } .unit-toggle { left:48px; right:auto; top:auto; bottom:0; } .divider { margin:34px 0; } footer { height:90px; } }
