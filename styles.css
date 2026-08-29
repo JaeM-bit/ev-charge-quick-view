@@ -35,6 +35,9 @@ input { width:100%; min-width:0; border:0; outline:0; background:transparent; co
 .presets button:hover, .presets button.active { border-color:var(--ink); background:var(--ink); color:var(--lime); }
 .range-table { display:grid; gap:10px; }
 .range-row { display:grid; grid-template-columns:1.1fr 1fr 1fr; gap:10px; align-items:end; }
+.range-row label { min-width:0; }
+.range-row .input-wrap input { width:0; min-width:64px; flex:1 1 64px; }
+.range-row .input-wrap span { font-size:9px; }
 .metric-row { padding-top:10px; border-top:1px solid var(--line); }
 .range-output { min-width:0; }
 .range-output strong { height:42px; border:1px solid var(--line); background:#f0eee7; display:flex; align-items:center; padding:0 11px; font-size:14px; font-weight:600; white-space:nowrap; }
@@ -57,5 +60,5 @@ dt { color:#aab7af; } dd { margin:0; font-family:"DM Mono"; }
 .fine-print { font-size:8px; line-height:1.4; color:#819088; margin:11px 0 0; }
 footer { height:52px; display:flex; justify-content:space-between; align-items:center; color:#7b857f; }
 footer p { font-size:13px; }
-@media (max-width:850px) { .intro { grid-template-columns:1fr; gap:30px; } .lede { margin:0; } .calculator { grid-template-columns:1fr; } h1 { letter-spacing:-4px; } }
+@media (max-width:1000px) { .intro { grid-template-columns:1fr; gap:18px; } .lede { margin:0; } .calculator { grid-template-columns:1fr; } h1 { letter-spacing:-2px; } }
 @media (max-width:600px) { .shell { width:min(100% - 24px,1180px); } .nav { height:54px; } .nav-note { display:none; } .intro { padding:20px 4px; } h1 { font-size:30px; letter-spacing:-1.7px; } .lede { font-size:13px; } form,.results { padding:35px 24px; } .battery-fields,.charger-fields { grid-template-columns:1fr; } .range-row { grid-template-columns:1fr; gap:9px; } .metric-row { margin-top:8px; padding-top:16px; } .divider { margin:34px 0; } footer { height:90px; } }

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ev-charge-quick-view-v8';
+const CACHE_NAME = 'ev-charge-quick-view-v9';
 const APP_FILES = [
   './',
   './index.html',
