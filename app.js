@@ -62,16 +62,22 @@ function calculate() {
 Object.entries(fields).forEach(([key, field]) => {
   if (key !== 'efficiency' && key !== 'metricEfficiency') field.addEventListener('input', calculate);
 });
-fields.efficiency.addEventListener('input', () => {
+function syncFromImperial() {
   const milesPerKwh = Number(fields.efficiency.value);
-  fields.metricEfficiency.value = milesPerKwh > 0 ? (100 / (milesPerKwh * 1.60934)).toFixed(1) : '';
+  fields.metricEfficiency.value = milesPerKwh > 0 ? (100 / (milesPerKwh * 1.60934)).toFixed(2) : '';
   calculate();
-});
-fields.metricEfficiency.addEventListener('input', () => {
+}
+
+function syncFromMetric() {
   const kwhPer100km = Number(fields.metricEfficiency.value);
   fields.efficiency.value = kwhPer100km > 0 ? ((100 / kwhPer100km) * 0.62137).toFixed(2) : '';
   calculate();
-});
+}
+
+fields.efficiency.addEventListener('input', syncFromImperial);
+fields.efficiency.addEventListener('change', syncFromImperial);
+fields.metricEfficiency.addEventListener('input', syncFromMetric);
+fields.metricEfficiency.addEventListener('change', syncFromMetric);
 document.querySelectorAll('[data-power]').forEach(button => button.addEventListener('click', () => {
   fields.power.value = button.dataset.power;
   document.querySelectorAll('[data-power]').forEach(item => item.classList.toggle('active', item === button));

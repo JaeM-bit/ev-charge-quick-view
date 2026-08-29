@@ -34,8 +34,7 @@ input { width:100%; min-width:0; border:0; outline:0; background:transparent; co
 .presets button { border:1px solid var(--line); color:#536159; background:transparent; padding:4px 7px; font:600 8px Manrope; cursor:pointer; }
 .presets button:hover, .presets button.active { border-color:var(--ink); background:var(--ink); color:var(--lime); }
 .range-table { display:grid; gap:10px; }
-.range-row { display:grid; grid-template-columns:52px 1.1fr 1fr 1fr; gap:10px; align-items:end; }
-.range-unit-name { height:42px; display:flex; align-items:center; color:var(--muted); font:500 9px "DM Mono"; text-transform:uppercase; letter-spacing:.6px; }
+.range-row { display:grid; grid-template-columns:1.1fr 1fr 1fr; gap:10px; align-items:end; }
 .metric-row { padding-top:10px; border-top:1px solid var(--line); }
 .range-output { min-width:0; }
 .range-output strong { height:42px; border:1px solid var(--line); background:#f0eee7; display:flex; align-items:center; padding:0 11px; font-size:14px; font-weight:600; white-space:nowrap; }
@@ -59,4 +58,4 @@ dt { color:#aab7af; } dd { margin:0; font-family:"DM Mono"; }
 footer { height:52px; display:flex; justify-content:space-between; align-items:center; color:#7b857f; }
 footer p { font-size:13px; }
 @media (max-width:850px) { .intro { grid-template-columns:1fr; gap:30px; } .lede { margin:0; } .calculator { grid-template-columns:1fr; } h1 { letter-spacing:-4px; } }
-@media (max-width:600px) { .shell { width:min(100% - 24px,1180px); } .nav { height:54px; } .nav-note { display:none; } .intro { padding:20px 4px; } h1 { font-size:30px; letter-spacing:-1.7px; } .lede { font-size:13px; } form,.results { padding:35px 24px; } .battery-fields,.charger-fields { grid-template-columns:1fr; } .range-row { grid-template-columns:1fr; gap:9px; } .range-unit-name { height:auto; margin-top:4px; color:var(--ink); font-weight:700; } .metric-row { margin-top:8px; padding-top:16px; } .divider { margin:34px 0; } footer { height:90px; } }
+@media (max-width:600px) { .shell { width:min(100% - 24px,1180px); } .nav { height:54px; } .nav-note { display:none; } .intro { padding:20px 4px; } h1 { font-size:30px; letter-spacing:-1.7px; } .lede { font-size:13px; } form,.results { padding:35px 24px; } .battery-fields,.charger-fields { grid-template-columns:1fr; } .range-row { grid-template-columns:1fr; gap:9px; } .metric-row { margin-top:8px; padding-top:16px; } .divider { margin:34px 0; } footer { height:90px; } }
